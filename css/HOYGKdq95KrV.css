@@ -696,3 +696,13 @@ body {
     width: 85%; /* Noch kleinere Breite der Container */
   }
 }
+
+.container {
+  width: 100%; /* Sicherstellen, dass Container die gesamte Breite nutzen */
+  padding: 0; /* Kein Padding auf kleinen Bildschirmen */
+}
+
+.header__wrapper, .one__page__wrapper, .two__page__wrapper, .three__page__wrapper {
+  width: 100%; /* Sicherstellen, dass Wrapper die gesamte Breite nutzen */
+  padding: 0 10px; /* Minimaler Padding für kleinen Bildschirmen */
+}
