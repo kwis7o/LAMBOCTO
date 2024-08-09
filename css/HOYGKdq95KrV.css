@@ -666,18 +666,33 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8rem; /* Reduziert die gesamte Textgröße */
+    transform: scale(0.9); /* Skaliert den gesamten Inhalt leicht nach unten */
+  }
+
   .one__page__ca > p {
-    font-size: 1rem; /* Weitere Verkleinerung der Schriftgröße */
-    word-break: break-all; /* Erlaubt das Umbrechen langer Zeichenketten */
-    line-height: 1.2; /* Verringert den Zeilenabstand */
-    padding: 2px; /* Reduziert das Padding, um mehr Platz zu schaffen */
+    font-size: 0.8rem; /* Noch kleinere Schriftgröße */
+    padding: 0; /* Entfernt Padding, um mehr Platz zu schaffen */
+  }
+
+  .container {
+    width: 90%; /* Reduziert die Breite der Container */
   }
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    font-size: 0.7rem; /* Weitere Reduzierung für sehr kleine Bildschirme */
+    transform: scale(0.8); /* Weitere Skalierung des gesamten Inhalts */
+  }
+
   .one__page__ca > p {
-    font-size: 0.8rem; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
-    line-height: 1.1; /* Verringert den Zeilenabstand weiter */
-    padding: 1px; /* Minimales Padding für maximalen Platz */
+    font-size: 0.7rem; /* Noch kleinere Schriftgröße */
+    padding: 0; /* Entfernt Padding komplett */
+  }
+
+  .container {
+    width: 85%; /* Noch kleinere Breite der Container */
   }
 }
