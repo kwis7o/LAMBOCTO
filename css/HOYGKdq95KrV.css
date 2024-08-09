@@ -665,29 +665,6 @@ body {
   background-color: #c6a623;
 }
 
-@media screen and (max-width: 768px) {
-  .one__page__ca > p {
-    font-size: 1.5rem; /* Ändere die Schriftgröße für kleine Bildschirme */
-    word-break: break-all; /* Erlaubt das Umbrechen langer Zeichenketten */
-  }
-}
-
-.container {
-  width: 100%; /* Sicherstellen, dass Container die gesamte Breite nutzen */
-  padding: 0; /* Kein Padding auf kleinen Bildschirmen */
-}
-
-.header__wrapper, .one__page__wrapper, .two__page__wrapper, .three__page__wrapper {
-  width: 100%; /* Sicherstellen, dass Wrapper die gesamte Breite nutzen */
-  padding: 0 10px; /* Minimaler Padding für kleinen Bildschirmen */
-}
-
-.one__page__wrapper > div > img {
-  width: 80%; /* Nutzt 80% der Containerbreite */
-  max-width: 400px; /* Begrenzt die maximale Breite */
-  height: auto; /* Erhält das Seitenverhältnis */
-}
-
 .one__page__ca > p {
   word-wrap: break-word; /* Erlaubt Zeilenumbruch innerhalb langer Wörter */
 }
