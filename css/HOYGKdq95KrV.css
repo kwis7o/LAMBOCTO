@@ -12,6 +12,8 @@
   --main: black;
   --white: #fff;
   --primary: rgb(173, 214, 227);
+  /* Set the root font size */
+  font-size: 16px; 
 }
 
 html,
@@ -65,7 +67,8 @@ body {
 .header {
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  /* Using rem for margin-top */
+  margin-top: 3.125rem; /* 50px / 16px = 3.125rem */
 }
 
 .header__wrapper {
@@ -82,7 +85,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 40px;
+  /* Using rem for gap */
+  gap: 2.5rem; /* 40px / 16px = 2.5rem */
   height: 300px;
   width: 100%;
 }
@@ -108,7 +112,8 @@ body {
 .one__page {
   width: 100%;
   height: 100%;
-  margin-top: 40px;
+  /* Using rem for margin-top */
+  margin-top: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 
 .one__page__wrapper {
@@ -125,7 +130,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 30px;
+  /* Using rem for gap */
+  gap: 1.875rem; /* 30px / 16px = 1.875rem */
 }
 
 .one__page__wrapper > div > img {
@@ -137,13 +143,15 @@ body {
 }
 
 .one__page__text {
-  padding: 5px 5px;
+  /* Using rem for padding */
+  padding: 0.3125rem; /* 5px / 16px = 0.3125rem */
 }
 
 .one__page__text > h2 {
   font-family: "Helvetica", cursive;
   font-weight: 400;
-  font-size: 3.75rem;
+  /* Using rem for font-size */
+  font-size: 2.3rem; /* 3.75rem is about 60px, so adjust accordingly */
   color: #face1c;
 }
 
@@ -215,7 +223,8 @@ body {
 }
 
 .one__page__ca {
-  margin-top: 30px;
+  /* Using rem for margin-top */
+  margin-top: 1.875rem; /* 30px / 16px = 1.875rem */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,13 +235,15 @@ body {
   -ms-flex-align: center;
   align-items: center;
 
-  padding: 5px 5px;
+  /* Using rem for padding */
+  padding: 0.3125rem; /* 5px / 16px = 0.3125rem */
   background-color: rgb(255, 255, 255, 0.9);
 }
 
 .one__page__ca > p {
   font-family: "Helvetica", cursive;
-  font-size: 2.25rem;
+  /* Using rem for font-size */
+  font-size: 1.4rem; /* 2.25rem is about 36px, so adjust accordingly */
   font-weight: 400;
   color: black;
 }
@@ -241,8 +252,9 @@ body {
   background-color: #1F1F1F;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* Using rem for padding-top and padding-bottom */
+  padding-top: 3.125rem; /* 50px / 16px = 3.125rem */
+  padding-bottom: 3.125rem; /* 50px / 16px = 3.125rem */
 }
 
 .two__page__wrapper {
@@ -259,7 +271,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 40px;
+  /* Using rem for gap */
+  gap: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 
 .two__page__wrapper > div > img {
@@ -280,7 +293,8 @@ body {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 20px;
+  /* Using rem for gap */
+  gap: 1.25rem; /* 20px / 16px = 1.25rem */
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -289,15 +303,18 @@ body {
 .two__page__right > p {
   font-family: "Roboto", monospace;
   font-weight: 400;
-  font-size: 24px;
+  /* Using rem for font-size */
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
 }
 
 .two__page__right > button {
-  padding: 15px 30px;
+  /* Using rem for padding */
+  padding: 0.9375rem 1.875rem; /* 15px / 16px = 0.9375rem and 30px / 16px = 1.875rem */
   border: 2px solid #000;
   background: var(--white);
   font-family: "Helvetica", cursive;
-  font-size: 24px;
+  /* Using rem for font-size */
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
   font-weight: 400;
   cursor: pointer;
   color: var(--main);
@@ -380,8 +397,10 @@ body {
 .three__page {
   width: 100%;
   height: 100%;
-  margin-top: 50px;
-  padding-bottom: 40px;
+  /* Using rem for margin-top */
+  margin-top: 3.125rem; /* 50px / 16px = 3.125rem */
+  /* Using rem for padding-bottom */
+  padding-bottom: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 
 .three__page__title {
@@ -398,27 +417,32 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 20px;
+  /* Using rem for gap */
+  gap: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 .three__page__title > div {
   background-color: #1F1F1F;
-  padding: 5px 5px;
+  /* Using rem for padding */
+  padding: 0.3125rem; /* 5px / 16px = 0.3125rem */
 }
 
 .three__page__title > div > h2 {
   font-family: "Helvetica", cursive;
-  font-size: 38px;
+  /* Using rem for font-size */
+  font-size: 2.4rem; /* 38px / 16px = 2.4rem */
   font-weight: 400;
 }
 
 .three__page__title > div > p {
   font-family: "Roboto", monospace;
-  font-size: 24px;
+  /* Using rem for font-size */
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
   font-weight: 400;
 }
 .three__page__wrapper {
-  margin-top: 60px;
+  /* Using rem for margin-top */
+  margin-top: 3.75rem; /* 60px / 16px = 3.75rem */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +457,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 40px;
+  /* Using rem for gap */
+  gap: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 
 .three__page__wrapper > div {
@@ -450,7 +475,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 20px;
+  /* Using rem for gap */
+  gap: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 .three__page__wrapper > div > img {
@@ -459,11 +485,13 @@ body {
 }
 
 .three__page__wrapper > div > button {
-  padding: 15px 30px;
+  /* Using rem for padding */
+  padding: 0.9375rem 1.875rem; /* 15px / 16px = 0.9375rem and 30px / 16px = 1.875rem */
   border: 2px solid #000;
   background: var(--white);
   font-family: "PlayES", cursive;
-  font-size: 24px;
+  /* Using rem for font-size */
+  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
   font-weight: 400;
   cursor: pointer;
   color: var(--main);
@@ -494,14 +522,17 @@ body {
     justify-content: center;
   }
   .two__page {
-    margin-top: 50px;
+    /* Using rem for margin-top */
+    margin-top: 3.125rem; /* 50px / 16px = 3.125rem */
   }
   .two__page__right > p {
-    font-size: 28px;
+    /* Using rem for font-size */
+    font-size: 1.75rem; /* 28px / 16px = 1.75rem */
   }
 
   .two__page__right > button {
-    font-size: 28px;
+    /* Using rem for font-size */
+    font-size: 1.75rem; /* 28px / 16px = 1.75rem */
   }
   .three__page__title > div > h2 {
     text-align: center;
@@ -526,8 +557,10 @@ body {
 
 .sliders {
   background-color: white;
-  padding: 50px;
-  gap: 40px;
+  /* Using rem for padding */
+  padding: 3.125rem; /* 50px / 16px = 3.125rem */
+  /* Using rem for gap */
+  gap: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 
 .scroller {
@@ -535,13 +568,15 @@ body {
 }
 
 .scroller__inner {
-  padding-block: 1rem;
+  /* Using rem for padding-block */
+  padding-block: 1rem; 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 1rem;
+  /* Using rem for gap */
+  gap: 1rem; /* 16px / 16px = 1rem */
 }
 
 .scroller[data-animated="true"] {
@@ -617,15 +652,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 20px;
+  /* Using rem for gap */
+  gap: 1.25rem; /* 20px / 16px = 1.25rem */
   flex-wrap: wrap; /* Allows wrapping if the container width is too small */
-  margin-top: 45px;
+  /* Using rem for margin-top */
+  margin-top: 2.8125rem; /* 45px / 16px = 2.8125rem */
 }
 
 .how-to-buy-box {
   background-color: #2e2e2e;
   border-radius: 10px;
-  padding: 20px;
+  /* Using rem for padding */
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
   color: #ffffff;
   text-align: center;
   flex: 1;
@@ -636,31 +674,71 @@ body {
 
 .how-to-buy-box h2 {
   color: #face1c;
-  margin-bottom: 15px;
+  /* Using rem for margin-bottom */
+  margin-bottom: 0.9375rem; /* 15px / 16px = 0.9375rem */
 }
 
 .how-to-buy-box ol {
   list-style: decimal;
   text-align: left;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  /* Using rem for margin-left */
+  margin-left: 1.25rem; /* 20px / 16px = 1.25rem */
+  /* Using rem for margin-bottom */
+  margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 .how-to-buy-box li {
-  margin: 5px 0;
+  /* Using rem for margin */
+  margin: 0.3125rem 0; /* 5px / 16px = 0.3125rem */
 }
 
 .buy-button {
   background-color: #face1c;
   color: #ffffff;
-  padding: 10px 20px;
+  /* Using rem for padding */
+  padding: 0.625rem 1.25rem; /* 10px / 16px = 0.625rem and 20px / 16px = 1.25rem */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  /* Using rem for font-size */
+  font-size: 1rem; /* 16px / 16px = 1rem */
   font-family: 'Helvetica', sans-serif; /* Apply Helvetica font to button */
 }
 
 .buy-button:hover {
   background-color: #c6a623;
 }
+
+@media screen and (max-width: 768px) {
+  .one__page__ca > p {
+    /* Using rem for font-size */
+    font-size: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    word-break: break-all; /* Erlaubt das Umbrechen langer Zeichenketten */
+  }
+}
+
+.container {
+  width: 100%; /* Sicherstellen, dass Container die gesamte Breite nutzen */
+  padding: 0; /* Kein Padding auf kleinen Bildschirmen */
+}
+
+.header__wrapper, .one__page__wrapper, .two__page__wrapper, .three__page__wrapper {
+  width: 100%; /* Sicherstellen, dass Wrapper die gesamte Breite nutzen */
+  /* Using rem for padding */
+  padding: 0 0.625rem; /* 10px / 16px = 0.625rem */
+}
+
+.one__page__wrapper > div > img {
+  width: 80%; /* Nutzt 80% der Containerbreite */
+  max-width: 400px; /* Begrenzt die maximale Breite */
+  height: auto; /* Erhält das Seitenverhältnis */
+}
+
+.one__page__ca > p {
+  word-wrap: break-word; /* Erlaubt Zeilenumbruch innerhalb langer Wörter */
+}
+
+//script.js
+const headerWrapper = document.querySelector('.header__wrapper');
+const onePageWrapper = document.querySelector('.one__page__wrapper');
+const twoPageWrapper = document.querySelector('.two__
