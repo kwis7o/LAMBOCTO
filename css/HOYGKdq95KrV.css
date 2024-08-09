@@ -664,3 +664,10 @@ body {
 .buy-button:hover {
   background-color: #c6a623;
 }
+
+@media screen and (max-width: 768px) {
+  .one__page__ca > p {
+    font-size: 1.5rem; /* Ändere die Schriftgröße für kleine Bildschirme */
+    word-break: break-all; /* Erlaubt das Umbrechen langer Zeichenketten */
+  }
+}
