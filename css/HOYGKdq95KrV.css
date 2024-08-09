@@ -667,7 +667,17 @@ body {
 
 @media screen and (max-width: 768px) {
   .one__page__ca > p {
-    font-size: 1.5rem; /* Ändere die Schriftgröße für kleine Bildschirme */
+    font-size: 1rem; /* Weitere Verkleinerung der Schriftgröße */
     word-break: break-all; /* Erlaubt das Umbrechen langer Zeichenketten */
+    line-height: 1.2; /* Verringert den Zeilenabstand */
+    padding: 2px; /* Reduziert das Padding, um mehr Platz zu schaffen */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .one__page__ca > p {
+    font-size: 0.8rem; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+    line-height: 1.1; /* Verringert den Zeilenabstand weiter */
+    padding: 1px; /* Minimales Padding für maximalen Platz */
   }
 }
