@@ -73,27 +73,25 @@
             <a href="https://www.dextools.io/app/en/solana/pair-explorer/2fhs5tXMPY56hmRYqocv9NSTrEf7jPzhUhb851g1ArZK?t=1723191647761"> <img src="images/HACz1Pth0yZC.png" alt=""></a>
           </div>
         </div>
+        <div class="one__page__ca">
+          <p class="copy-text" id="copyText">BjFQCqiD7MYMw1HDP1tXjKEW5p7iz5ZJyEsWSYtk2FRQ</p>
+        </div>
       </div>
     </section>
-	
-	<section class="three__page">
-  
-          <div class="how-to-buy-boxes">
-          <div class="how-to-buy-box">
-		  <div class="two__page__wrapper">
-		  <div><img class="dog__2" src="images/pd6pHml0xoGM.png" alt=""></div>
-            <ol>
-              <li>Unleash the Power of $LAMBO! 🚀</li>
-              <li>$LAMBO is your ticket to the fast lane!</li>
-              <li>Get ready to accelerate into the future with $LAMBO, the ultimate token that's as sleek as a Lamborghini.</li>
-              <li>Strap in and experience the thrill of the ride as $LAMBO roars through the crypto world!</li>
-              <li>Stay tuned for high-octane promotions and game-changing collaborations!</li>
-            </ol>
-            </a>
+    <section class="two__page">
+      <div class="container">
+        <div class="two__page__wrapper">
+          <div><img class="dog__2" src="images/pd6pHml0xoGM.png" alt=""></div>
+          <div class="two__page__right">
+            <p>Unleash the Power of $LAMBO! 🚀</p>
+            <p>$LAMBO is your ticket to the fast lane!</p>
+            <p>Get ready to accelerate into the future with $LAMBO, the ultimate token that's as sleek as a Lamborghini.</p>
+            <p>Strap in and experience the thrill of the ride as $LAMBO roars through the crypto world!</p>
+            <p>Stay tuned for high-octane promotions and game-changing collaborations!</p>
           </div>
-</section>
-
-	
+        </div>
+      </div>
+    </section>
     <section class="three__page">
       <div class="container">
         <div class="three__page__title">
@@ -101,8 +99,6 @@
             <h2>Have you always wanted a Lambo? - Your wish will maybe come true. ✨</h2>
           </div>
         </div>
-
-
 
         <!-- New Boxes Section -->
         <div class="how-to-buy-boxes">
@@ -144,16 +140,16 @@
     </div>
 
     <script>
-      document.getElementById('copyButton').addEventListener('click', function() {
-        // Create a temporary input field
+      document.getElementById('copyText').addEventListener('click', function() {
+        // Erstellen eines temporären Input-Feldes
         var tempInput = document.createElement('input');
         document.body.appendChild(tempInput);
         tempInput.value = this.innerText;
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(tempInput);
-
-        // Optional: Show a confirmation message
+        
+        // Optional: Zeige eine Bestätigungsmeldung
         alert('CA copied ' + tempInput.value);
       });
     </script>
