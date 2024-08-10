@@ -216,7 +216,7 @@ body {
 
 .two__page {
   background-color: #1F1F1F;
-  width: 100%;
+  width: 100%; /*  Ensure the gray background doesn't go beyond the screen */
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
