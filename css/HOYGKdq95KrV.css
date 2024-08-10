@@ -136,6 +136,15 @@ body {
   border: 3px solid #1F1F1F;
 }
 
+.two__page__right > p:nth-child(3), /* Target the 3rd paragraph */
+.two__page__right > p:nth-child(4), /* Target the 4th paragraph */
+.two__page__right > p:nth-child(5) {  /* Target the 5th paragraph */
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px; /* Default font size for larger screens */
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
 .one__page__text {
   padding: 5px 5px;
 }
@@ -710,5 +719,11 @@ body {
   .header__wrapper > div > a > img {
     max-width: 22%; /* Adjust logo size to fit comfortably */
     height: auto;
+  }
+  
+  .two__page__right > p:nth-child(3), /* Target the 3rd paragraph */
+  .two__page__right > p:nth-child(4), /* Target the 4th paragraph */
+  .two__page__right > p:nth-child(5) {  /* Target the 5th paragraph */
+    font-size: 14px; /* Smaller font size for mobile */
   }
 }
