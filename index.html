@@ -73,9 +73,6 @@
             <a href="https://www.dextools.io/app/en/solana/pair-explorer/2fhs5tXMPY56hmRYqocv9NSTrEf7jPzhUhb851g1ArZK?t=1723191647761"> <img src="images/HACz1Pth0yZC.png" alt=""></a>
           </div>
         </div>
-        <div class="one__page__ca">
-          <p class="copy-text" id="copyText">BjFQCqiD7MYMw1HDP1tXjKEW5p7iz5ZJyEsWSYtk2FRQ</p>
-        </div>
       </div>
     </section>
     <section class="two__page">
@@ -88,6 +85,7 @@
             <p>Get ready to accelerate into the future with $LAMBO, the ultimate token that's as sleek as a Lamborghini.</p>
             <p>Strap in and experience the thrill of the ride as $LAMBO roars through the crypto world!</p>
             <p>Stay tuned for high-octane promotions and game-changing collaborations!</p>
+            <button id="copyButton">BjFQCqiD7MYMw1HDP1tXjKEW5p7iz5ZJyEsWSYtk2FRQ</button>
           </div>
         </div>
       </div>
@@ -140,16 +138,16 @@
     </div>
 
     <script>
-      document.getElementById('copyText').addEventListener('click', function() {
-        // Erstellen eines temporären Input-Feldes
+      document.getElementById('copyButton').addEventListener('click', function() {
+        // Create a temporary input field
         var tempInput = document.createElement('input');
         document.body.appendChild(tempInput);
         tempInput.value = this.innerText;
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(tempInput);
-        
-        // Optional: Zeige eine Bestätigungsmeldung
+
+        // Optional: Show a confirmation message
         alert('CA copied ' + tempInput.value);
       });
     </script>
