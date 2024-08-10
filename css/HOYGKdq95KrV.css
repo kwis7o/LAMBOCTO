@@ -214,29 +214,6 @@ body {
   }
 }
 
-.one__page__ca {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-  padding: 5px 5px;
-  background-color: rgb(255, 255, 255, 0.9);
-}
-
-.one__page__ca > p {
-  font-family: "Helvetica", cursive;
-  font-size: 2.25rem;
-  font-weight: 400;
-  color: black;
-}
-
 .two__page {
   background-color: #1F1F1F;
   width: 100%;
@@ -284,12 +261,38 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  background-color: #2e2e2e; /* Same background as "How to Buy" */
+  border-radius: 10px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  flex: 1;
+  min-width: 48%;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif; 
 }
 
 .two__page__right > p {
-  font-family: "Roboto", monospace;
-  font-weight: 400;
-  font-size: 24px;
+  font-family: 'Helvetica', sans-serif; /* Use Helvetica font for consistency */
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.two__page__right > button { /* Style the button */
+  background-color: #face1c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Helvetica', sans-serif; 
+  margin-top: 15px; /* Add some spacing above the button */
+}
+
+.two__page__right > button:hover {
+  background-color: #c6a623;
 }
 
 .two__page__right > button {
@@ -571,7 +574,7 @@ body {
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 40s;
+  --_animation-duration: 40px;
 }
 
 .scroller[data-speed="slowed"] {
@@ -611,6 +614,16 @@ body {
     height: auto;
     height: 80px;
   }
+
+  .header__wrapper {
+    flex-direction: row; /* Arrange logos horizontally */
+    justify-content: space-between; /* Distribute logos evenly */
+  }
+
+  .header__wrapper > div > a > img { 
+    max-width: 30%; /* Adjust to fit your design */
+    height: auto; 
+  } 
 }
 
 .how-to-buy-boxes {
@@ -663,4 +676,35 @@ body {
 
 .buy-button:hover {
   background-color: #c6a623;
+}
+
+/* Responsive Styling for Mobile */
+@media screen and (max-width: 768px) { 
+  /* ... your existing media query rules ... */
+
+  .two__page__wrapper {
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: center;
+  }
+
+  .two__page__right {
+    min-width: 100%; /* Make it take up the full width on mobile */
+    margin-bottom: 20px; /* Add some spacing between sections */
+  }
+
+  .one__page__ca { 
+    min-width: 100%; /* Make it take up the full width on mobile */
+    margin-bottom: 20px; /* Add some spacing between sections */
+  }
+
+  .header__wrapper {
+    flex-direction: row; /* Arrange logos horizontally */
+    justify-content: space-around; /* Distribute logos evenly */
+    gap: 10px; /* Smaller gap between logos */
+  }
+
+  .header__wrapper > div > a > img {
+    max-width: 22%; /* Adjust logo size to fit comfortably */
+    height: auto;
+  }
 }
