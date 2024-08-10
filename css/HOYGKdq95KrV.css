@@ -267,7 +267,7 @@ body {
   color: #ffffff;
   text-align: center;
   flex: 1;
-  min-width: 48%;
+  /* Same width as "Have you always wanted a Lambo" */
   box-sizing: border-box;
   font-family: 'Helvetica', sans-serif; 
 }
@@ -688,7 +688,7 @@ body {
   }
 
   .two__page__right {
-    min-width: 100%; /* Make it take up the full width on mobile */
+    /* Same width as "Have you always wanted a Lambo" */
     margin-bottom: 20px; /* Add some spacing between sections */
   }
 
