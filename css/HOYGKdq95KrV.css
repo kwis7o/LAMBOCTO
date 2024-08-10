@@ -692,6 +692,10 @@ body {
     margin-bottom: 20px; /* Add some spacing between sections */
   }
 
+  .two__page__right > p {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
   .one__page__ca { 
     min-width: 100%; /* Make it take up the full width on mobile */
     margin-bottom: 20px; /* Add some spacing between sections */
