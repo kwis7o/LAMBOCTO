@@ -664,3 +664,9 @@ body {
 .buy-button:hover {
   background-color: #c6a623;
 }
+
+@media screen and (max-width: 768px) { /* Target mobile devices */
+  .copy-text {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}
