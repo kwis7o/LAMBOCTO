@@ -664,9 +664,52 @@ body {
 .buy-button:hover {
   background-color: #c6a623;
 }
+@media only screen and (max-width: 1000px) {
+  .one__page__ca p {
+    width: 100%; /* Make the div take 90% of the screen width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; /* Add some padding on mobile */
+    font-size: 10px;
 
-@media screen and (max-width: 768px) { /* Target mobile devices */
-  .copy-text {
-    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+
+  
+ 
+
+
+
+ .header__wrapper {
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: space-around; /* Space the items evenly */
+    column-gap: 3px;
+    height: 10px;
+    margin-bottom: 50px;
+  }
+
+  .header__wrapper div {
+    flex: 1 1 auto; /* Make each item flexible */
+    max-width: 8%; /* Control the maximum width for each item */
+  }
+
+  .header__wrapper img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 326px) {
+  .one__page__ca p {
+    width: 100%; /* Make the paragraph take full width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; /* Add some padding */
+    font-size: 10px; /* Smaller font size for tiny screens */
+    word-wrap: break-word; /* Ensures long words break to the next line */
+    word-break: break-all; /* Breaks words that are too long to fit */
+    text-align: center; /* Center the text within the paragraph */
   }
 }
